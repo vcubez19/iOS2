@@ -12,8 +12,9 @@ import UIKit
 class ViewController: UIViewController {
 
     
+    // MARK: Properties
     @IBOutlet weak var labelResult: UILabel!
-    @IBOutlet weak var textMessage: UITextField!
+    @IBOutlet weak var textDisplay: UITextField!
     
     
     override func viewDidLoad() {
@@ -22,9 +23,10 @@ class ViewController: UIViewController {
     
     }
 
-
+    
+    // MARK: Methods
     @IBAction func changeButton(_ sender: Any) {
-        labelResult.text = textMessage.text?.uppercased()
+        labelResult.text = textDisplay.text?.uppercased()
     }
     
     
